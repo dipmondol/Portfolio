@@ -1,0 +1,45 @@
+svg.radial-progress {
+
+    height: auto;
+
+    max-width: 200px;
+
+    padding: 1em;
+
+
+    width: 100%;
+
+}
+
+
+svg.radial-progresscircle {
+
+
+    stroke: #fff;
+
+    stroke-dashoffset: 219.91148575129;
+
+    stroke-width: 10;
+
+
+}
+
+
+
+svg.radial-progresscircle.incomplete {
+    opacity: 0.25;
+}
+
+
+svg.radial-progresscircle.complete {
+    stroke-dasharray: 219.91148575129;
+}
+
+
+svg.radial-progress text {
+
+    fill: rgb(216, 22, 22);
+
+    text-anchor: middle;
+
+}

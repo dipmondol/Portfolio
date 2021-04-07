@@ -1,0 +1,502 @@
+/* ===========================
+common css
+============================== */
+* {
+    margin: 0;
+    padding: 0;
+
+    box-sizing: border-box;
+}
+
+ul li {
+    list-style-type: none;
+}
+
+body {
+    font-family: 'Titillium Web', sans-serif;
+
+    text-rendering: optimizeLegibility;
+
+}
+
+h1 {
+    font-size: 42.16px;
+    color: #f7f3ea;
+}
+
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+/* ===========================
+Reusable components
+============================== */
+.row {
+    max-width: 195rem;
+    margin: 0 auto;
+}
+
+section {
+    padding: 8rem 0;
+
+}
+
+h2 {
+    font-size: 4rem;
+    text-transform: uppercase;
+    letter-spacing: .3rem;
+    font-weight: 600;
+    margin-bottom: 2rem;
+    color: #f7f3ea;
+}
+
+h2::after {
+    content: "";
+    display: block;
+    height: .4rem;
+    background: #f7f3ea;
+    width: 30rem;
+    margin: auto;
+    margin-top: 2rem;
+
+}
+
+h3 {
+    font-size: 2.4rem;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: #f7f3ea;
+}
+
+.box {
+
+    padding: 1%;
+}
+
+.box p {
+    font-size: 1.6rem;
+    font-weight: 300;
+    margin-top: 2rem;
+    color: #f7f3ea;
+}
+
+/* little description - Paragraph */
+
+.little-description {
+    font-size: 1.8rem;
+    width: 60%;
+    margin-left: 20%;
+    line-height: 2rem;
+    color: #f7f3ea;
+
+}
+
+.btn:link,
+.btn:visited,
+.btn {
+    background: #333;
+    border-bottom: .4rem solid #000;
+    color: #f7f3ea;
+    text-decoration: none;
+    padding: 2.5rem 14rem;
+    border-radius: .5rem;
+    display: inline-block;
+    margin-top: 4.5rem;
+    text-transform: uppercase;
+    font-size: 1.8rem;
+    font-weight: normal;
+
+
+}
+
+/* ===========================
+Header Section
+============================== */
+
+header {
+    background: linear-gradient(#87509c6e, #87509cc7), url(/css/img/bg5.jpg);
+    height: 85vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    position: relative;
+    background-attachment: fixed;
+}
+
+.logo {
+    height: 3.5rem;
+    width: auto;
+    margin-top: 3.5rem;
+    float: left;
+}
+
+/* Main Nav */
+.main-nav {
+    float: right;
+    margin-top: 4rem;
+
+}
+
+.main-nav li {
+    display: inline-block;
+    margin-left: 1rem;
+}
+
+.main-nav li:first-child {
+    margin-left: 0;
+}
+
+.main-nav li a:link,
+.main-nav li a:visited {
+    color: #f7f3ea;
+    text-decoration: none;
+    text-transform: uppercase;
+    background: #643a7900;
+    padding: .6rem 1.6rem;
+    border-radius: .3rem;
+    display: inline-block;
+    font-size: 1.6rem;
+    transition: .3s;
+
+}
+
+.main-nav li:hover a:link,
+.main-nav li:hover a:visited {
+
+    background: #643a79;
+
+}
+
+.active {
+    background: #643a79;
+    border-radius: .3rem;
+
+}
+
+/* Sticky Navigation */
+.sticky{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    background: rgba(135, 80, 156, 0.9);
+    padding: 1rem 0;
+    box-shadow: 0 .2rem .5rem rgba(255, 255, 255, 0.9 );
+}
+.sticky .logo{
+    margin-top: 0;
+}
+.sticky .main-nav{
+    margin-top: 0;
+}
+
+.hero-text-box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+
+
+
+}
+
+.btn-hero:link,
+.btn-hero:visited {
+    background: #eb7d4b;
+    border-color: #c86a40;
+}
+
+/* ========================
+Services section
+============================*/
+.services-section {
+    color: #f7f3ea;
+    text-align: center;
+    background: linear-gradient(#171818c5, #17c2a3ef), url(/css/img/bg6.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center center;
+
+}
+
+.services-section h2::after {
+    background: #f7f3ea;
+    border-radius: .5rem;
+}
+
+.services-icon {
+    height: 12rem;
+    margin-top: 4.5rem;
+    margin-bottom: 3.5rem;
+}
+
+/*===================
+Team Section
+======================*/
+
+.team-section {
+    background: linear-gradient(#e7f1f8a2, #3874a094), url(/css/img/bg8.jpg);
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: cover;
+    background-attachment: fixed;
+    text-align: center;
+}
+
+.team-section h2 {
+    color: #3c4761;
+}
+
+.team-section h2::after {
+    background: #f6f8fa;
+}
+
+.team-member {
+    margin-top: 4.5rem;
+    margin-bottom: 3.5rem;
+    height: 20rem;
+    width: 20rem;
+    border-radius: 50%;
+}
+
+.team-section .little-description {
+    color: #3c4761;
+}
+
+.team-section h3 {
+    color: #27283d;
+}
+
+.role {
+    font-size: 1.6rem;
+    color: #055975;
+    margin-top: 1rem;
+    text-transform: capitalize;
+
+}
+
+.team-section .box p {
+    color: #3c4761;
+}
+
+.social-link {
+    margin-top: 4.5rem;
+
+}
+
+.social-link ul li {
+    display: inline-block;
+    margin: 0 .5rem;
+}
+
+.social-link ul li a:link {
+    color: #f7f3ea;
+}
+
+.social-link ul li a:link i::before {
+    background: #8c969c;
+    height: 2rem;
+    width: 2rem;
+    display: inline-block;
+    font-size: 2rem;
+    padding: 1rem;
+    border-radius: 50%;
+    transition: .5s;
+}
+
+.social-link ul li a:hover i::before {
+    background: #173d77;
+    transform: rotate(360deg);
+
+}
+
+.fa-facebook-f {
+    color: #f7f3ea;
+
+}
+
+
+
+/* ======================
+skill section
+======================== */
+.skill-section {
+    background: #f7f3ea;
+    color: #273d6e;
+    text-align: center;
+    background: linear-gradient(#5f32a860, #ffffff), url(/css/img/bg9.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    height: 70
+    vh;
+}
+
+.skill-section h2 {
+    color: #3c4761;
+}
+
+.skill-section h2::after {
+
+    background: #f7f7f4;
+    border-radius: .5rem;
+
+
+
+}
+
+.skill-section .little-description {
+    color: #3c4761;
+}
+
+.skill-section h3 {
+    color: #3c4761;
+}
+
+.skill-section .box {
+    margin-top: 4.5rem;
+}
+
+/* ===================
+portfolio section
+====================== */
+
+.portfolio-section {
+    background: linear-gradient(#1d101252, #0a0707da), url(/css/img/bg11.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+    text-align: center;
+}
+
+.portfolio-section h2 {
+    color: #eef0f5;
+    text-align: center;
+}
+.portfolio-section h2::after{
+    border-radius: .5rem;
+}
+.portfolio-section .little-description{
+    color: #f6f8fd;
+}
+
+.portfolio-filter{
+        margin: 4.5rem;
+}
+.portfolio-filter button{
+    background: #ebc985;
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: .5rem;
+    color: #3c4761;
+    margin: 0 .5rem;
+    transform: .5s;
+}
+.portfolio-filter button:hover{
+    cursor: pointer;
+    box-shadow:inset 0 .3rem .5rem #3c4761a2;
+}
+.portfolio-image{
+    width: 100%;
+    height: 30rem;
+}
+.portfolio-section h4{
+    color: #f7f3ea;
+    font-size: 1.8rem;
+    margin-top: 2rem;
+}
+.portfolio-section .btn-load-more{
+    background: #17c2a4;
+    border-color: #14a58c;
+}
+
+.portfolio-section .mixitup-control-active{
+    background: #fff;
+
+}
+
+/* ========================
+contact section
+============================ */
+.contact-section{
+    background: #3c5499;
+    text-align: center;
+    background-attachment: fixed;
+    
+}
+
+.contact-section .little-description{
+    color: #f7f3ea;
+}
+.contact-section h2::after{
+    border-radius: .5rem;
+}
+
+.contact-section form{
+    margin-top: 5rem;
+    width: 70%;
+    margin-left: 15%;
+ 
+}
+.contact-section input[type="text"],
+.contact-section input[type="email"],
+.contact-section textarea{
+    background: #273a71;
+    border: .1rem solid #273a71;
+    width: 100%;
+    border-radius: .5rem;
+    font-size: 1.8rem;
+    padding: 1.5rem;
+    color: #ffffff;
+    
+    
+}
+
+.col .email{
+    margin-left: 3%;
+}
+
+.contact-section form ::placeholder{
+    color: #fff;
+    opacity: 1;
+}
+
+.btn-submit{
+    border: 0;
+    border-bottom: 3px solid #299ec5 ;
+    background: #30bae7;
+}
+.btn-submit:hover{
+    cursor: pointer;
+}
+/* ===============================
+        Footer Section
+===================================*/
+.footer-section{
+    background: #344b8e;
+    padding: 3rem 0;
+    text-align: center;
+    border-top: .1rem solid rgba(255, 255, 255, 0.3);
+
+
+}
+.footer-section li{
+    display: inline-block;
+    margin: 0 2rem;
+}
+.footer-section li a {
+    color: #fff;
+    text-decoration: none;
+    text-transform: capitalize;
+    font-size: 2.4rem;
+}
+.footer-section li:hover a{
+    color:#30bae7;
+}
